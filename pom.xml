@@ -8,10 +8,12 @@
     <artifactId>case-study</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>hot-class-loader</module>
         <module>hot-agent-premain</module>
         <module>hot-agent-main</module>
+        <module>algorithm-writing</module>
     </modules>
 
     <profiles>
