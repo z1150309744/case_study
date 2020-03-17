@@ -32,3 +32,6 @@ hs_err_pid*
 hot-agent-main/hot-agent-main.iml
 hot-agent-premain/hot-agent-premain.iml
 hot-class-loader/hot-class-loader.iml
+case-study.iml
+*.iml
+.idea/*
