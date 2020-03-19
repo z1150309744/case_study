@@ -1,10 +1,10 @@
-package com.lichao.leetcode26;
+package com.lichao;
 
 /**
  * @Author: lichao
  * @Date: 2020-03-18 20:38
  */
-class Solution {
+class P_26 {
     public static int removeDuplicates(int[] nums) {
 
         int top = 0;

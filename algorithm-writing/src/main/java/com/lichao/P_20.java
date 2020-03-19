@@ -1,4 +1,4 @@
-package com.lichao.leetcode901;
+package com.lichao;
 
 import java.util.Stack;
 
@@ -6,7 +6,7 @@ import java.util.Stack;
  * @Author: lichao
  * @Date: 2020-03-17 17:48
  */
-class ValidParenthesis {
+class P_20 {
     public static boolean isValid(String s) {
 
         Stack<Character> stack = new Stack();
