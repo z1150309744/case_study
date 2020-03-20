@@ -1,4 +1,4 @@
-package com.nishui.stringseries;
+package com.nishui;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +9,10 @@ import java.util.Stack;
  * @Date 2020/3/17 7:59 上午
  * @Created by yiwen
  */
-public class ValidParenthesis {
+public class P_20 {
 
     public static void main(String[] args) {
-        System.out.println(ValidParenthesis.isValid("]"));
+        System.out.println(P_20.isValid("]"));
     }
 
     public static boolean isValid(String s) {
