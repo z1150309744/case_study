@@ -14,6 +14,7 @@
         <module>hot-agent-premain</module>
         <module>hot-agent-main</module>
         <module>algorithm-writing</module>
+        <module>java-spi</module>
     </modules>
 
     <profiles>
