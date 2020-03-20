@@ -7,12 +7,18 @@ package com.lichao;
 public class P_62 {
 
 
-    static int [][] remember;
+    static int[][] remember;
+
+
+
 
     public static int uniquePaths(int m, int n) {
-        remember = new int[m+1][n+1];
-        return uniquePathsInner(m,n);
+        remember = new int[m + 1][n + 1];
+        return uniquePathsInner(m, n);
     }
+
+
+
 
     public static int uniquePathsInner(int m, int n) {
 
@@ -21,18 +27,18 @@ public class P_62 {
             return 1;
         }
         if (m > 1) {
-            if(remember[m-1][n] != 0){
-                ret = ret + remember[m-1][n];
-            }else{
+            if (remember[m - 1][n] != 0) {
+                ret = ret + remember[m - 1][n];
+            } else {
                 ret = ret + uniquePathsInner(m - 1, n);
             }
 
         }
         if (n > 1) {
-            if(remember[m][n-1] != 0){
-                ret = ret + remember[m][n-1];
+            if (remember[m][n - 1] != 0) {
+                ret = ret + remember[m][n - 1];
 
-            }else{
+            } else {
                 ret = ret + uniquePathsInner(m, n - 1);
             }
         }
@@ -45,7 +51,7 @@ public class P_62 {
 
 
     public static void main(String[] args) {
-        int ret = uniquePaths(7,3);
+        int ret = uniquePaths(7, 3);
         System.console();
     }
 }
