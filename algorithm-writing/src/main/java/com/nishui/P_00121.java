@@ -5,12 +5,12 @@ package com.nishui;
  * @Date 2020/3/19 7:11 上午
  * @Created by yiwen
  */
-public class P_121 {
+public class P_00121 {
 
     public static void main(String[] args) {
         int[] prices = new int[]{7,1,5,3,6,4};
-        System.out.println(new P_121().maxProfit(prices));
-        System.out.println(new P_121().maxProfit2(prices));
+        System.out.println(new P_00121().maxProfit(prices));
+        System.out.println(new P_00121().maxProfit2(prices));
     }
 
 

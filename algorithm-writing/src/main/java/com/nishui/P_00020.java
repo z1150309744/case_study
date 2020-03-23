@@ -9,10 +9,10 @@ import java.util.Stack;
  * @Date 2020/3/17 7:59 上午
  * @Created by yiwen
  */
-public class P_20 {
+public class P_00020 {
 
     public static void main(String[] args) {
-        System.out.println(P_20.isValid("]"));
+        System.out.println(P_00020.isValid("]"));
     }
 
     public static boolean isValid(String s) {

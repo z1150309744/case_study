@@ -5,10 +5,10 @@ package com.nishui;
  * @Date 2020/3/18 8:00 上午
  * @Created by yiwen
  */
-public class P_26 {
+public class P_00026 {
 
     public static void main(String[] args) {
-        P_26 p_26 = new P_26();
+        P_00026 p_26 = new P_00026();
 
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
 
