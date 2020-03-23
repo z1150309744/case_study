@@ -5,7 +5,7 @@ package com.nishui;
  * @Date 2020/3/20 7:58 上午
  * @Created by yiwen
  */
-public class P_62 {
+public class P_00062 {
 
 
     public int uniquePaths2(int m, int n) {
