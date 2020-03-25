@@ -1,4 +1,4 @@
-package com.nishui;
+package com.nishui.two;
 
 /**
  * @Description 最大子序和
