@@ -4,7 +4,7 @@ package com.lichao;
  * @Author: lichao
  * @Date: 2020-03-26 21:23
  */
-public class P_211 {
+public class P_221 {
 
     public static int maximalSquare(char[][] matrix) {
 
@@ -44,7 +44,10 @@ public class P_211 {
         if (matrix.length == 0) {
             return 0;
         }
+
         int[][] db = new int[matrix.length][matrix[0].length];
+
+        // 复制第一行
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][0] == '1') {
                 db[i][0] = 1;
@@ -52,6 +55,7 @@ public class P_211 {
             }
         }
 
+        // 复制第一列
         for (int i = 0; i < matrix[0].length; i++) {
             if (matrix[0][i] == '1') {
                 db[0][i] = 1;
@@ -59,6 +63,7 @@ public class P_211 {
             }
         }
 
+        // 推导出其他
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[i].length; j++) {
                 if (matrix[i][j] == '0') {
