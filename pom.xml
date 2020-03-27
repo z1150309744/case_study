@@ -15,6 +15,7 @@
         <module>hot-agent-main</module>
         <module>algorithm-writing</module>
         <module>java-spi</module>
+        <module>java-study</module>
     </modules>
 
     <profiles>
