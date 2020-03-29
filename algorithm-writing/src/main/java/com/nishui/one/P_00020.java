@@ -1,4 +1,4 @@
-package com.nishui;
+package com.nishui.one;
 
 import java.util.HashMap;
 import java.util.Map;
