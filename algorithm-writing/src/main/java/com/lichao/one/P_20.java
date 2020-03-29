@@ -1,4 +1,4 @@
-package com.lichao;
+package com.lichao.one;
 
 import java.util.Stack;
 

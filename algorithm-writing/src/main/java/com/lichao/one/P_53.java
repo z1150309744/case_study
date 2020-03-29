@@ -1,4 +1,4 @@
-package com.lichao;
+package com.lichao.one;
 
 /**
  * describe: 定义一个opt数组opt[i] 表示以ith元素结束时的最大子序和;

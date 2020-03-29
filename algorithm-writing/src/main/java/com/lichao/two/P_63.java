@@ -1,4 +1,4 @@
-package com.lichao;
+package com.lichao.two;
 
 /**
  * describe: 动态规划思想。每一格的路径数=该格上面格子的路径数+该格左边格子的路径数。（第一排和第一列的单独考虑）
