@@ -7,44 +7,30 @@ package com.lichao;
  * @date 2019/03/17
  */
 class P_63 {
-    public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
+    public static int maxProfit(int[] prices) {
 
-        if (null == obstacleGrid || 0 == obstacleGrid.length || 0 == obstacleGrid[0].length) {
+        int top;
+        int max = 0;
+
+        if(prices.length == 0){
             return 0;
         }
-
-        int n = obstacleGrid.length;
-        int m = obstacleGrid[0].length;
-        int[][] db = new int[n][m];
-
-        for (int i = 0; i < n; i++) {
-            if (obstacleGrid[i][0] == 0) {
-                db[i][0] = 1;
-            } else {
-                break;
+        top = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            if(prices[i] > top){
+                max  = (prices[i] - top) > max ? (prices[i] - top) : max;
+            }else{
+                top  = prices[i];
             }
         }
-        for (int i = 0; i < m; i++) {
-            if (obstacleGrid[0][i] == 0) {
-                db[0][i] = 1;
-            } else {
-                break;
-            }
-        }
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j < m; j++) {
-                if (obstacleGrid[i][j] == 0) {
-                    db[i][j] = db[i - 1][j] + db[i][j - 1];
-                } else {
-                    db[i][j] = 0;
-                }
-            }
-        }
-        return db[n - 1][m - 1];
+        return max;
     }
 
-    public static void main(String [] args){
-        int [][] input = {{0,0,0}, {0,1,0},{0,0,0}};
-        System.out.println(uniquePathsWithObstacles(input));
+
+
+
+    public static void main(String[] args) {
+        int[] input = {7,1,5,3,6,4};
+        maxProfit(input);
     }
 }
