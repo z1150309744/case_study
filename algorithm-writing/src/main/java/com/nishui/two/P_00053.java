@@ -19,6 +19,7 @@ public class P_00053 {
         }
 
         int[] dp = new int[len];
+        /** dp[i] 表示 0..i-1中某个数 -> i 连续最大序列值和 **/
         dp[0] = nums[0];
         int ans = nums[0];
         for (int i = 1; i < len; i++) {

@@ -1,4 +1,4 @@
-package com.nishui;
+package com.nishui.one;
 
 /**
  * @Description 不同路径

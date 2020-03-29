@@ -1,4 +1,4 @@
-package com.nishui;
+package com.nishui.one;
 
 /**
  * @Description 删除排序数组中的重复项
