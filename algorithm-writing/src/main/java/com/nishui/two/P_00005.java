@@ -23,6 +23,7 @@ public class P_00005 {
             return s;
         }
 
+        /** dp[i][j] 表示 i ... j是回文串 **/
         boolean[][] dp = new boolean[len][len];
 
         int max = 1;

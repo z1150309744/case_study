@@ -19,14 +19,12 @@ public class P_00063 {
             return 0;
         }
 
+        /** 初始化 状态 **/
         int max = 0;
         int minPrice = prices[0];
-        //dp[i] 表示到 0..i-1 -> i 能够获得最大利润
-        int[] dp = new int[len];
-        //初始化状态
-        dp[0] = 0;
 
         for (int i = 1; i < len; i++) {
+            /** 状态转移方程式 **/
             max = Math.max(prices[i] - minPrice, max);
             minPrice = Math.min(prices[i], minPrice);
         }
