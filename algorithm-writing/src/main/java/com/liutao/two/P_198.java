@@ -59,10 +59,7 @@ public class P_198 {
             }else {
                 nums[i] = nums[i - 2] + nums[i];
             }
-
         }
-
-
         return Math.max(nums[nums.length - 1], nums[nums.length - 2]);
 
     }
