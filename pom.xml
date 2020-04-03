@@ -12,6 +12,7 @@
         <module>hot-class-loader</module>
         <module>hot-agent-premain</module>
         <module>hot-agent-main</module>
+        <module>carl-spring-boot-starter-web</module>
     </modules>
 
     <profiles>
