@@ -1,0 +1,18 @@
+package com.dongyantong.one;
+
+/**
+ * @Author: dongyantong
+ * @Date: 2020/4/2
+ */
+public class P_27 {
+    public int removeElement(int[] nums, int val) {
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];
+                i++;
+            }
+        }
+        return i;
+    }
+}
