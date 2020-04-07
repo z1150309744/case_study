@@ -21,7 +21,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-.idea/.gitignore
 .idea/case-study.iml
 .idea/compiler.xml
 .idea/inspectionProfiles/
@@ -34,4 +33,5 @@ hot-agent-premain/hot-agent-premain.iml
 hot-class-loader/hot-class-loader.iml
 case-study.iml
 *.iml
-.idea/*
+.idea/*.kotlin_module
+
