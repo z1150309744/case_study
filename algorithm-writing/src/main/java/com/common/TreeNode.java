@@ -1,4 +1,4 @@
-package com.nishui.common;
+package com.common;
 
 /**
  * @Description TODO

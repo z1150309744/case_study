@@ -1,6 +1,6 @@
 package com.nishui.three;
 
-import com.nishui.common.TreeNode;
+import com.common.TreeNode;
 
 /**
  * @Description 相同的树
