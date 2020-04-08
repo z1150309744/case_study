@@ -91,4 +91,18 @@ public class P_42 {
         return maxData;
     }
 
+
+    public int trap1(int[] height) {
+        int length = height.length;
+        //如果雨水数量小于3, 则接不到雨水
+        if (length < 3) {
+            return 0;
+        }
+
+
+
+
+        return 0;
+    }
+
 }
