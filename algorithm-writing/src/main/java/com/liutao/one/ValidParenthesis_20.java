@@ -23,8 +23,8 @@ public class ValidParenthesis_20 {
     public static void main(String[] args) {
 
 
-        ValidParenthesis_20 validParenthesis_20=new ValidParenthesis_20();
-        System.out.println(  validParenthesis_20.isValid("{()}"));
+        ValidParenthesis_20 validParenthesis_20 = new ValidParenthesis_20();
+        System.out.println(validParenthesis_20.isValid("{()}"));
     }
 
     /**
@@ -82,18 +82,44 @@ public class ValidParenthesis_20 {
         rightMap.put(']', '[');
         Stack<Character> stacks = new Stack<>();
         for (char word : s.toCharArray()) {
-            if(leftMap.get(word)!=null){
+            if (leftMap.get(word) != null) {
                 stacks.push(leftMap.get(word));
-            }else {
-                if(stacks.isEmpty()){ //顺序不对直接返回false
+            } else {
+                if (stacks.isEmpty()) { //顺序不对直接返回false
                     return false;
                 }
-               char rightData= stacks.pop(); // pop出来的是
-                if(rightData!=word){
+                char rightData = stacks.pop(); // pop出来的是
+                if (rightData != word) {
                     return false;
                 }
             }
 
+        }
+        return stacks.isEmpty();
+
+    }
+
+
+    public boolean isValid2(String s) {
+        if (s == null || s.length() % 2 == 1) {
+            return false;
+        }
+        if ("".equals(s)) {
+            return true;
+        }
+        Map<Character, Character> map = new HashMap<>();
+        map.put(')', '(');
+        map.put('}', '{');
+        map.put(']', '[');
+        Stack<Character> stacks = new Stack<>();
+        for (char word : s.toCharArray()) {
+            if (map.get(word) == null) {
+                stacks.push(word);
+            } else {
+                if (stacks.isEmpty() || map.get(word) != stacks.pop()) {
+                    return false;
+                }
+            }
         }
         return stacks.isEmpty();
 

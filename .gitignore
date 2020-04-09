@@ -34,4 +34,5 @@ hot-class-loader/hot-class-loader.iml
 case-study.iml
 *.iml
 .idea/*.kotlin_module
+.idea/*
 
