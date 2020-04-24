@@ -16,6 +16,7 @@
         <module>algorithm-writing</module>
         <module>java-spi</module>
         <module>java-study</module>
+        <module>spring-boot-demo</module>
     </modules>
 
     <profiles>
